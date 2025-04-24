@@ -1,0 +1,43 @@
+#hero{
+    text-align: center;
+    & img[src*='Music']{
+        width: 12.875rem;
+    }
+
+    & h1{
+        margin-top: 1rem;
+    }
+
+    & p{
+        font: var(--h3);
+        margin-top: .5rem;
+    }
+
+    & .buttons{
+        margin-top: 2rem;
+        justify-content: center;
+    }
+}
+
+@media (width >= 80em){
+    #hero{
+        background: url(../assets/Illustration.svg) no-repeat bottom center/contain;
+        padding-bottom: 15rem;
+        & img[src*='Music']{
+            width: 25.75rem;
+        }
+
+        & h1{
+            margin-top: 1.5rem;
+        }
+    
+        & p{
+            font: var(--h3);
+            margin-top: 1rem;
+        }
+    
+        & .buttons{
+            margin-top: 3rem;
+        }
+    }
+}
